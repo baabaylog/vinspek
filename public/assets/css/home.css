@@ -1,0 +1,87 @@
+.banner .content h1 {
+    font-size: 4rem;
+}
+
+.highlighted {
+    color: #007bff;
+}
+
+.banner .content p {
+    font-size: 15px;
+    color: gray;
+}
+
+.banner-search .search-round-box {
+  padding: 30px 50px;
+  background-color: #f2f1f0;
+  border-radius: 60px;
+}
+.banner-search .search-round-box form input {
+  padding: 10px 20px;
+  width: 100%;
+  border: 0;
+  border-radius: 35px;
+  margin: 5px;
+}
+
+.point-marks{
+  border: 2px solid #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:25px;
+  border-radius: 100%;
+  font-size: 20px;
+  color: #007bff;
+  font-weight: 600;
+}
+.point-marks div{
+  position: absolute;
+}
+
+.card ul li span.point {
+  margin-left: 7px;
+  font-size: 13px;
+  color: #b4b2b2;
+}
+.card ul li span.check {
+  border: 1px solid lightgray;
+  border-radius:100%;
+  padding:8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.card ul li span.check div {
+  position: absolute;
+  color: lightgray;
+  font-size: 11px;
+
+}
+
+.plains-btn{
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 11px;
+  text-align: center;
+}
+.blue-card > * {
+  color: #fff;
+}
+.blue-card ul li span {
+  color: #fff !important;
+}
+.blue-card a{
+  background-color: #fff;
+  color: #007bff;
+}
+.testimonials-home-page .card{
+  margin: 10px;
+}

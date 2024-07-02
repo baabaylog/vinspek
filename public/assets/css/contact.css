@@ -1,0 +1,34 @@
+
+
+.contact-form input{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 2px solid lightgray;
+}
+
+.contact-form textarea{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding-bottom: 5px;
+    outline: none;
+    border-bottom: 2px solid lightgray;
+}
+
+.info-icon-map .contact-info{
+    display: flex;
+    flex-direction: column;
+}
+.info-icon-map .contact-info ul li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.info-icon-map .contact-info ul li  span{
+    padding-left: 13px;
+    font-size: 13px;
+}

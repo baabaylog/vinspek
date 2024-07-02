@@ -330,6 +330,14 @@ class ApiController extends Controller
                 ], 404);
             }
 
+            // Verify user type inspector or not.
+            $customer = Customer::where('user_id', $request->inspector_id)->first();
+            if($customer && $customer->user_type != 'inspector' ){
+                return response()->json([
+                    'status' => false,
+                    'message' => 'Provided user is not inspector!'
+                ], 400);
+            }
             // verify inspector id.
             $order = Order::find($request->order_id);
             if (!$order) {

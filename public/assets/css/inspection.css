@@ -1,0 +1,24 @@
+
+
+.inspection_input{
+    border-radius: 100px;
+    box-shadow: -1px -1px 4px #FFFFFF, 0px 1px 4px 1px rgba(0, 0, 0, 0.1);
+    outline: none;
+    border: 0;
+    padding: 7px 25px;
+}
+
+.inspection_btn {
+    background-color:#007bff ;
+    color: #fff;
+    font-size: 15px;
+    padding: 7px 13px;
+    border-radius: 7px;
+    outline: none;
+    border: 0;
+}
+.border_20{
+    border-radius: 20px;
+}
+
+

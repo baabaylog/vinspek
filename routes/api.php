@@ -6,6 +6,7 @@ use App\Http\Controllers\Api\ApiController;
 use App\Http\Controllers\Api\CustomerPlanController;
 use App\Http\Controllers\Api\InspectorPlanController;
 use App\Http\Controllers\Api\InspectorController;
+use App\Http\Controllers\Api\InspectorReportController;
 use App\Http\Controllers\Api\StubController;
 use App\Http\Controllers\Api\PaymentController;
 
@@ -92,7 +93,24 @@ Route::group([
                     Route::get("customer-settings/get", [ApiController::class, "get_single_customer_settings"]);
                     Route::post("customer-settings/update", [ApiController::class, "update_single_customer_settings"]);        
 
+    // Inspector Reort
+    Route::prefix('inspector-report')->controller(InspectorReportController::class)->group(function (){
+        
+        Route::post('/upload-images', 'upload_images');
+        Route::post('/upload-videos', 'upload_videos');
+        Route::post('/vehicle-information', 'vehicle_information');
+        Route::post('/summary', 'summary');
+        Route::post('/exterior', 'exterior');
+        Route::post('/interior', 'interior');
+        Route::post('/mechanical', 'mechanical');
+        Route::post('/road-test', 'road_test');
+        Route::post('/tires', 'tires');
+        Route::post('/edit_images', 'edit_images');
+        Route::post('/grades', 'grades');
+        Route::post('/reviews', 'reviews');
 
+    });
+    
 
 
 
